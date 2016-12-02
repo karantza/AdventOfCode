@@ -32,4 +32,4 @@ for value in inst:
 
 	print(value, coord)
 
-print("distance: ", sum(coord))
+print("distance: ", sum(map(abs, coord)))

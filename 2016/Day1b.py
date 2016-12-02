@@ -37,7 +37,7 @@ for value in inst:
 
 		currentCoord = coord[0], coord[1]
 		if (currentCoord in visited):
-			print(str(currentCoord) + " visited twice, distance: " + str(sum(coord)))
+			print(str(currentCoord) + " visited twice, distance: " + str(sum(map(abs, coord))))
 			sys.exit(0)
 		else:
 			visited[currentCoord] = True
