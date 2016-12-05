@@ -23,7 +23,7 @@ def decrypt(name, sector):
 with open('Day4.txt', 'r') as file:
 
     for roomstr in file:
-		m = re.match('([a-z-]*)-(\d*)\[([a-z]*)\]', roomstr)
+		m = re.match('([a-z-]*)-(\d*)\[([a-z]*)]', roomstr)
 		
 		name = ''.join(m.group(1).split('-'))
 		namestr = m.group(1)
