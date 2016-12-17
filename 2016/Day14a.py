@@ -7,7 +7,7 @@ def md5(x):
 re_triple = re.compile(r"(.)\1{2}")
 re_pentuples = re.compile(r"(.)\1{4}")
 
-input = "yjdafjpo"
+input = "abc"
 
 keys = set() # established keys
 triples = {} # map of letter to the index it has a triple in
@@ -45,8 +45,8 @@ while True:
 
 
 	if keyCount > 64:
-		print("Keys:\n" + str(keys))
 		skeys = sorted(list(keys))
+		print("Keys:\n" + str(skeys))
 		print("Sufficient keys found! 64th key is at index " + str(skeys[63]))
 		break
 
