@@ -65,6 +65,11 @@ while (value < input):
 	i = i + 1
 	
 print value
-for y in range(-2, 3):
-	print "\t".join([str(knownValues.get(Coord(x,y))) for x in range(-2, 3)])
+
+def pad(s,n):
+	m = len(s)
+	return (" " * (n - m)) + s
+
+for y in range(-5, 6):
+	print "\t".join([pad(str(knownValues.get(Coord(x,y)) or "-"), 7) for x in range(-5, 6)])
 
